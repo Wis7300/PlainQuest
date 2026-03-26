@@ -1,0 +1,17 @@
+{
+    "epee en bois": [{"baton":1,
+                    "planche":2}, 1],
+    "epee en pierre": [{"baton":1,
+                    "pierre":2}, 1], 
+    "epee en fer": [{"baton":1, "lingot de fer":2}, 1],  
+    "epee stylee": [{"baton":1, "mecanisme complexe": 1, "circuit imprime":1}, 1],
+
+    "planche": [{"buche":1}, 4],
+    "baton": [{"planche":2}, 4],
+    "lingot de fer":[{"roue dentee":10}, 2],
+
+    "potion rouge": [{"potion rose":1, "poudre electrique":2}, 1],
+    
+    "machine a voyager dans le temps": [{"mecanisme complexe": 5, "circuit imprime": 5}, 1],
+    "machine a voyager dans le temps allumee": [{"machine a voyager dans le temps":1, "poudre electrique": 10}, 1]
+}
