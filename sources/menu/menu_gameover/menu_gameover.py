@@ -1,0 +1,95 @@
+import arcade
+import os
+
+from sources.menu.button_sprite import ButtonSprite
+from sources.save.save import delete_file
+
+
+click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
+
+
+
+class MenuGameover(arcade.View):
+    def __init__(self, file, gameview):
+        super().__init__()
+        self.file = file
+        self.gameview = gameview
+
+        self.background_color = arcade.color.RED
+
+        # Boutons
+        self.button_list = arcade.SpriteList()
+        self.button_width = 300
+        self.button_height = 60
+        spacing = 20
+        y_start = self.window.height // 2 + 20
+
+        # Crée chaque bouton comme sprite
+        names = ["RESPAWN", "QUIT"]
+        for i, name in enumerate(names):
+            y = y_start - i * (self.button_height + spacing)
+            btn = ButtonSprite(
+                center_x=self.window.width // 2,
+                center_y=y,
+                width=self.button_width,
+                height=self.button_height,
+                color=(255, 255, 255, 180),  # blanc semi-transparent
+                text=name
+            )
+            self.button_list.append(btn)
+        
+        # Caméra
+        self.camera = arcade.camera.Camera2D()
+        self.camera.position = self.window.center_x, self.window.center_y
+
+    def on_draw(self):
+        self.camera.use()
+        self.clear()
+        self.button_list.draw()
+        # Dessiner le texte sur les boutons
+        for btn in self.button_list:
+            btn.label.draw()
+
+    def on_mouse_press(self, x, y, button, modifiers):
+        # Vérifie quel bouton est cliqué
+        for btn in self.button_list:
+            if (btn.center_x - btn.width / 2 <= x <= btn.center_x + btn.width / 2 and
+                btn.center_y - btn.height / 2 <= y <= btn.center_y + btn.height / 2):
+                if btn.text == "RESPAWN":
+                    self.load_game()
+                elif btn.text == "QUIT":
+                    self.load_start()
+                click_sound.play()
+
+    def on_mouse_motion(self, x, y, dx, dy):
+
+        for btn in self.button_list:
+            condition = (btn.center_x - btn.base_width / 2 <= x <= btn.center_x + btn.base_width / 2 and 
+            btn.center_y - btn.base_height / 2 <= y <= btn.center_y + btn.base_height / 2)
+            
+            if condition:
+            
+                btn.width = btn.base_width + 10
+                btn.height = btn.base_height + 10
+            else:
+                
+                btn.width = self.button_width
+                btn.height = self.button_height
+            
+
+
+
+
+    def on_show_view(self):
+        self.gameview.player.hp = self.gameview.player.max_hp
+        self.gameview.inventory.clear()
+        self.gameview.player.center_x = 2500
+        self.gameview.player.center_y = 2500
+
+    
+    def load_start(self):
+        from sources.menu.menu_start.menu_start import MenuStart
+        self.window.show_view(MenuStart())
+    
+    def load_game(self):
+        self.window.show_view(self.gameview)
