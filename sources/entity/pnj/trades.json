@@ -1,0 +1,13 @@
+{
+    "possible_trades": [
+        {"required": "buche", "qty_required": 2, "result": "planche", "qty_result": 9},
+        {"required": "pierre", "qty_required": 3, "result": "buche", "qty_result": 10},
+        
+        {"required":"pierre", "qty_required":5, "result":"piece", "qty_result":1},
+        {"required": "buche", "qty_required": 10, "result": "piece", "qty_result": 1},
+        {"required":"roue dentee", "qty_required":12, "result":"piece", "qty_result":2},
+
+        {"required": "piece", "qty_required":10, "result": "mecanisme complexe", "qty_result":1},
+        {"required": "piece", "qty_required": 1, "result": "potion rose", "qty_result": 1}
+    ]
+}
