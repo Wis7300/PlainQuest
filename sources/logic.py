@@ -2,17 +2,17 @@ import arcade
 import math
 import random
 
-from sources.save.save import save_file, load_file, dict_to_sprite_list, sprite_list_to_dict
-import sources.entity as entity
-from sources.entity.item_cls.swords.fist import Fist
-from sources.inventory.inventory import Inventory
-from sources.map.map1.map1 import MapEngine
-from sources.menu.menu_trade.menu_trade import MenuTrade
-from sources.menu.menu_pause.menu_pause import MenuPause
-from sources.menu.menu_gameover.menu_gameover import MenuGameover
-from sources.menu.menu_craft.menu_craft import MenuCraft
-from sources.menu.menu_inventory.menu_inventaire import InventoryMenu
-from sources.menu.menu_end_screen.menu_end_screen import MenuEndScreen
+from save.save import save_file, load_file, dict_to_sprite_list, sprite_list_to_dict
+import entity as entity
+from entity.item_cls.swords.fist import Fist
+from inventory.inventory import Inventory
+from map.map1.map1 import MapEngine
+from menu.menu_trade.menu_trade import MenuTrade
+from menu.menu_pause.menu_pause import MenuPause
+from menu.menu_gameover.menu_gameover import MenuGameover
+from menu.menu_craft.menu_craft import MenuCraft
+from menu.menu_inventory.menu_inventaire import InventoryMenu
+from menu.menu_end_screen.menu_end_screen import MenuEndScreen
 
 
 
@@ -32,10 +32,10 @@ PLAYER_SPEED = 400
 CAMERA_PAN_SPEED =0.2
 
 # SFX
-opening_menu_sound = arcade.load_sound("sources/sound+music/SFX/opening_menu.mp3")
-wood_hit_sound = arcade.load_sound("sources/sound+music/SFX/wood_hit.mp3")
-stone_hit_sound = arcade.load_sound("sources/sound+music/SFX/stone_hit.mp3")
-hurt_sound = arcade.load_sound("sources/sound+music/SFX/hurt.mp3")
+opening_menu_sound = arcade.load_sound("sound+music/SFX/opening_menu.mp3")
+wood_hit_sound = arcade.load_sound("sound+music/SFX/wood_hit.mp3")
+stone_hit_sound = arcade.load_sound("sound+music/SFX/stone_hit.mp3")
+hurt_sound = arcade.load_sound("sound+music/SFX/hurt.mp3")
 
 
 
@@ -51,7 +51,7 @@ class GameView(arcade.View):
 
         
         self.music_player = None
-        self.music_menu = arcade.Sound("sources/sound+music/music/game_music.mp3")
+        self.music_menu = arcade.Sound("sound+music/music/game_music.mp3")
 
         # Recupère les données stockées
         data = load_file(self.save_file)        
