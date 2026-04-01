@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_STONE = "sources/textures/item/stone/stone.png"
+IMG_STONE = "textures/item/stone/stone.png"
 
 class Stone(Item):
     type = "pierre"
