@@ -1,7 +1,7 @@
 import arcade
-from sources.entity import Item
+from entity import Item
 
-IMG_TIME_MACHINE = "sources/textures/item/time_machine/time_machine.png"
+IMG_TIME_MACHINE = "textures/item/time_machine/time_machine.png"
 
 class TimeMachine(Item):
     type = "machine a voyager dans le temps" 
