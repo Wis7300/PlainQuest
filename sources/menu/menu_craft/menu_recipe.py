@@ -1,9 +1,9 @@
 import arcade
 import json
-from sources.entity.item import Item
+from entity.item import Item
 
-path_to_recipe = "sources/craft/recipes.json"
-path_to_img = "sources/textures/UI/recipe.png"
+path_to_recipe = "craft/recipes.json"
+path_to_img = "textures/UI/recipe.png"
 img_recipe = arcade.load_texture(path_to_img)
 
 class MenuRecipe(arcade.View):
