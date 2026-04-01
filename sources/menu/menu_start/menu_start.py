@@ -1,16 +1,16 @@
 import arcade
 import os
 
-from sources.menu.button_sprite import ButtonSprite
-from sources.menu.menu_save.menu_save import MenuSave
-from sources.menu.menu_control.menu_control import MenuControl
+from menu.button_sprite import ButtonSprite
+from menu.menu_save.menu_save import MenuSave
+from menu.menu_control.menu_control import MenuControl
 
-MENU_IMAGE = "sources/textures/UI/menu_img.jpg"
+MENU_IMAGE = "textures/UI/menu_img.jpg"
 
-click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
+click_sound = arcade.load_sound("sound+music/SFX/menu_click.mp3")
 
 
-texture_to_title = "sources/textures/UI/plain_quest.png"
+texture_to_title = "textures/UI/plain_quest.png"
 
 
 class MenuStart(arcade.View):
@@ -18,7 +18,7 @@ class MenuStart(arcade.View):
         super().__init__()
 
         self.music_menu_player = None
-        self.music_menu = arcade.Sound("sources/sound+music/music/menu_music.mp3")
+        self.music_menu = arcade.Sound("sound+music/music/menu_music.mp3")
         
         
         
