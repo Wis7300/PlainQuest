@@ -1,7 +1,7 @@
-from sources.entity.item import Item
+from entity.item import Item
 
 
-IMG_COIN = "sources/textures/item/coin/coin.png"
+IMG_COIN = "textures/item/coin/coin.png"
 
 class Coin(Item):
     type = "piece"
