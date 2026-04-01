@@ -2,8 +2,8 @@ import arcade
 
 
 
-texture_to_title = "sources/textures/UI/plain_quest.png"
-texture_to_arcade = "sources/textures/UI/fait_avec_arcade.png"
+texture_to_title = "textures/UI/plain_quest.png"
+texture_to_arcade = "textures/UI/fait_avec_arcade.png"
 
 class MenuIntro(arcade.View):
     def __init__(self):
