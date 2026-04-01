@@ -1,5 +1,5 @@
 import arcade
-from sources.entity.entity import Entity
+from entity.entity import Entity
 
 
 class Enemy(Entity):
