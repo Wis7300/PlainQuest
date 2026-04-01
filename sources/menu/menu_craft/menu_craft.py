@@ -1,13 +1,13 @@
 import arcade
-from sources.menu.button_sprite import ButtonSprite
-from sources.craft.craft import Craft
-from sources.entity.item import Item 
-from sources.menu.menu_craft.menu_recipe import MenuRecipe
+from menu.button_sprite import ButtonSprite
+from craft.craft import Craft
+from entity.item import Item 
+from menu.menu_craft.menu_recipe import MenuRecipe
 
-craft_sound = arcade.load_sound("sources/sound+music/SFX/craft.mp3")
+craft_sound = arcade.load_sound("sound+music/SFX/craft.mp3")
 
 
-texture_to_craft = "sources/textures/UI/craft.png"
+texture_to_craft = "textures/UI/craft.png"
 img_craft = arcade.load_texture(texture_to_craft)
 
 class MenuCraft(arcade.View):
