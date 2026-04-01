@@ -2,13 +2,13 @@ import arcade
 import random
 import json
 import os
-from sources.entity.entity import Entity
+from entity.entity import Entity
 
 # Configuration des constantes
 PNJ_HP = 20
 PNJ_TEXTURES = [
-    "sources/textures/pnj/img_man.png",
-    "sources/textures/pnj/img_woman.png"
+    "textures/pnj/img_man.png",
+    "textures/pnj/img_woman.png"
 ]
 
 class Pnj(Entity):
@@ -32,7 +32,7 @@ class Pnj(Entity):
     def load_random_trade(self) -> dict:
         """Load the trades from the JSON file and return a random trade"""
         try:
-            file_path = "sources/entity/pnj/trades.json" 
+            file_path = "entity/pnj/trades.json" 
 
             with open(file_path, "r") as f:
                 data = json.load(f)
