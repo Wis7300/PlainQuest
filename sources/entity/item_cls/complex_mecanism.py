@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_COMPLEX_MECANISM = "sources/textures/item/complex_mecanism/complex_mecanism.png"
+IMG_COMPLEX_MECANISM = "textures/item/complex_mecanism/complex_mecanism.png"
 
 class ComplexMecanism(Item):
     type = "mecanisme complexe"
