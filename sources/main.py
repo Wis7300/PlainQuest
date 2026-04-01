@@ -2,7 +2,7 @@ import arcade
 import pyglet
 from menu.menu_intro.menu_intro import MenuIntro
 
-path_window_icon = "sources/textures/UI/logo.png"
+path_window_icon = "textures/UI/logo.png"
 icon = pyglet.image.load(path_window_icon)
 arcade.enable_timings()
 
