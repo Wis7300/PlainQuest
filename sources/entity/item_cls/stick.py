@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_STICK = "sources/textures/item/stick/stick.png"
+IMG_STICK = "textures/item/stick/stick.png"
 
 class Stick(Item):
     type = "baton"
