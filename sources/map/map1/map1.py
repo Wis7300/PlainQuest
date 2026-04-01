@@ -4,7 +4,7 @@ import os
 import json
 
 # --- Configuration ---
-PATH_TO_TEXTURES = "sources/textures/map/map1"
+PATH_TO_TEXTURES = "textures/map/map1"
 TILE_SIZE = 120
 CHUNK_SIZE = 8       
 VIEW_DISTANCE = 3    
