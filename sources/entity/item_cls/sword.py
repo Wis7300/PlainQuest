@@ -1,9 +1,9 @@
 import math
 import arcade.hitbox as hitbox
-from sources.entity import Item
-from sources.textures.load_sheet import load_sheet
+from entity import Item
+from textures.load_sheet import load_sheet
 
-IMG_SWORD = "sources/textures/item/sword/stone sword.png"
+IMG_SWORD = "textures/item/sword/stone sword.png"
 
 
 
