@@ -1,6 +1,6 @@
 import arcade
 import pyglet
-from sources.menu.menu_intro.menu_intro import MenuIntro
+from menu.menu_intro.menu_intro import MenuIntro
 
 path_window_icon = "sources/textures/UI/logo.png"
 icon = pyglet.image.load(path_window_icon)
