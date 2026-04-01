@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_POWERED_TIME_MACHINE = "sources/textures/item/time_machine/powered_time_machine.png"
+IMG_POWERED_TIME_MACHINE = "textures/item/time_machine/powered_time_machine.png"
 
 class PoweredTimeMachine(Item):
     type = "machine a voyager dans le temps allumee"
