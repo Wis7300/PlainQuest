@@ -1,7 +1,7 @@
-from sources.entity.item import Item
+from entity.item import Item
 
 
-IMG_PRINTED_CIRCUIT = "sources/textures/item/printed_circuit/printed_circuit.png"
+IMG_PRINTED_CIRCUIT = "textures/item/printed_circuit/printed_circuit.png"
 
 class Printed_circuit(Item):
     type = "circuit imprime"
