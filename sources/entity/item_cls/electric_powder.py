@@ -1,6 +1,6 @@
-from sources.entity.item import Item
+from entity.item import Item
 
-IMG_ELECTRIC_POWDER = "sources/textures/item/electric_powder/electric_powder.png"
+IMG_ELECTRIC_POWDER = "textures/item/electric_powder/electric_powder.png"
 
 class ElectricPowder(Item):
     type = "poudre electrique"
