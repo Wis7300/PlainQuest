@@ -1,7 +1,7 @@
-from sources.entity.item import Item
+from entity.item import Item
 
-RED_POTION_IMG = "sources/textures/item/potion/red_potion.png"
-PINK_POTION_IMG = "sources/textures/item/potion/pink_potion.png"
+RED_POTION_IMG = "textures/item/potion/red_potion.png"
+PINK_POTION_IMG = "textures/item/potion/pink_potion.png"
 
 class Potion(Item):
     type = 'potion'
