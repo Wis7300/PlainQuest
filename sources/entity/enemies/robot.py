@@ -3,17 +3,17 @@ import random
 import arcade
 
 
-from sources.entity.enemy import Enemy
-from sources.textures.load_sheet import load_sheet
-from sources.entity.entity import Entity
+from entity.enemy import Enemy
+from textures.load_sheet import load_sheet
+from entity.entity import Entity
 
 MAP_WIDTH = 5000
 MAP_HEIGHT = 5000
 
-TEXTURES = {"idle": "sources/textures/enemy/robot/Robot_Idle.png",
-                    "run": "sources/textures/enemy/robot/Robot_run.png",
-                    "shoot": "sources/textures/enemy/robot/Robot_Shoot.png",
-                    "bullet": "sources/textures/enemy/robot/Bullet.png"}
+TEXTURES = {"idle": "textures/enemy/robot/Robot_Idle.png",
+                    "run": "textures/enemy/robot/Robot_run.png",
+                    "shoot": "textures/enemy/robot/Robot_Shoot.png",
+                    "bullet": "textures/enemy/robot/Bullet.png"}
         
 idle_textures = load_sheet(TEXTURES["idle"], 6)
 run_textures = load_sheet(TEXTURES["run"], 4)
