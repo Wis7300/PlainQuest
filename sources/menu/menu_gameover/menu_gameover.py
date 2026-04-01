@@ -1,11 +1,11 @@
 import arcade
 import os
 
-from sources.menu.button_sprite import ButtonSprite
-from sources.save.save import delete_file
+from menu.button_sprite import ButtonSprite
+from save.save import delete_file
 
 
-click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
+click_sound = arcade.load_sound("sound+music/SFX/menu_click.mp3")
 
 
 
