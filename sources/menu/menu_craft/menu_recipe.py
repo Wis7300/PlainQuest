@@ -108,5 +108,5 @@ class MenuRecipe(arcade.View):
 
     def on_key_press(self, key, modifiers):
         if key == arcade.key.ESCAPE:
-            from sources.menu.menu_craft.menu_craft import MenuCraft
+            from menu.menu_craft.menu_craft import MenuCraft
             self.window.show_view(MenuCraft(gameview=self.gameview))
