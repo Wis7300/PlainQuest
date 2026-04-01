@@ -1,5 +1,5 @@
-from sources.save.save import load_file, save_file
-import sources.entity as entity
+from save.save import load_file, save_file
+import entity as entity
 
 
 
