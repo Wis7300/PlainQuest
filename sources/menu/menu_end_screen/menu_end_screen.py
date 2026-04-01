@@ -1,6 +1,6 @@
 import arcade
 
-from sources.menu.menu_intro.menu_intro import MenuIntro
+from menu.menu_intro.menu_intro import MenuIntro
 
 
 class MenuEndScreen(arcade.View):
@@ -23,9 +23,8 @@ class MenuEndScreen(arcade.View):
                                         width = self.window.width // 2)
         self.text_list.append(self.congrats_text)
 
-        self.thanks_text = arcade.Text(text="Merci d'avoir joué à ce jeu ! " \
-                                        "                                   " \
-                                        "Appuyez sur Entrée pour continuer ou " \
+        self.thanks_text = arcade.Text(text="Merci d'avoir joué à ce jeu ! \n" \
+                                        "Appuyez sur Entrée pour continuer ou \n" \
                                         "sur Échap pour revenir au menu principal.",
                                         x = self.window.width // 2,
                                         y = self.window.height // 2 - 100,
