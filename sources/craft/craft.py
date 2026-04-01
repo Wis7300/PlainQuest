@@ -1,9 +1,9 @@
 import json
 
-from sources.inventory.inventory import Inventory
+from inventory.inventory import Inventory
 
 # Les recettes sont de la forme [ingrédient, quantité_produite]
-PATH_TO_RECIPE = "sources/craft/recipes.json"
+PATH_TO_RECIPE = "craft/recipes.json"
 
 class Craft:
     def __init__(self, file, gameview):
