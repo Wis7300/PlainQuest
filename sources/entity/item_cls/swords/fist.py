@@ -1,9 +1,9 @@
-from sources.entity.item_cls.sword import Sword
-from sources.entity.item import Item
-from sources.textures.load_sheet import load_sheet
+from entity.item_cls.sword import Sword
+from entity.item import Item
+from textures.load_sheet import load_sheet
 
 
-IMG_COIN = "sources/textures/item/sword/fist.png"
+IMG_COIN = "textures/item/sword/fist.png"
 
 texture = load_sheet(IMG_COIN, 6)
 
