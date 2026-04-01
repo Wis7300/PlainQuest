@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_PLANK = "sources/textures/item/plank/plank.png"
+IMG_PLANK = "textures/item/plank/plank.png"
 
 class Plank(Item):
     type = "planche"
