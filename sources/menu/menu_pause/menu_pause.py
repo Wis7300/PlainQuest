@@ -1,10 +1,10 @@
 import arcade
 import os
 
-from sources.menu.button_sprite import ButtonSprite
+from menu.button_sprite import ButtonSprite
 
 
-click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
+click_sound = arcade.load_sound("sound+music/SFX/menu_click.mp3")
 
 MENU_IMAGE = os.path.join(os.path.dirname(__file__), "menu_pause.jpg")
 
