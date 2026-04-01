@@ -1,16 +1,16 @@
 import arcade
 import random
 
-from sources.entity.entity import Entity
-from sources.textures.load_sheet import load_sheet
-from sources.map.map1.map1 import MapEngine
+from entity.entity import Entity
+from textures.load_sheet import load_sheet
+from map.map1.map1 import MapEngine
 
 MAP_WIDTH = 5000
 MAP_HEIGHT = 5000
 
 TEXTURES = {
-    "idle": "sources/textures/player/player_idle.png",
-    "run": "sources/textures/player/player_run.png"
+    "idle": "textures/player/player_idle.png",
+    "run": "textures/player/player_run.png"
 }
 
 idle_textures = load_sheet(TEXTURES["idle"], 1)
