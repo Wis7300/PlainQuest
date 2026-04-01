@@ -70,6 +70,6 @@ class MenuIntro(arcade.View):
 
 
     def open_start(self):
-        from sources.menu.menu_start.menu_start import MenuStart
+        from menu.menu_start.menu_start import MenuStart
         self.window.show_view(MenuStart())
         
