@@ -2,22 +2,22 @@ import random
 import math
 import arcade
 
-from sources.entity.enemy import Enemy
-from sources.textures.load_sheet import load_sheet
+from entity.enemy import Enemy
+from textures.load_sheet import load_sheet
 
 
 
 TEXTURES = {
-    "idle": "sources/textures/enemy/exploser/exploser_idle.png",      
-    "run": "sources/textures/enemy/exploser/exploser_run.png",
-    "attack": "sources/textures/enemy/exploser/exploser_attack.png"
+    "idle": "textures/enemy/exploser/exploser_idle.png",      
+    "run": "textures/enemy/exploser/exploser_run.png",
+    "attack": "textures/enemy/exploser/exploser_attack.png"
 }
 
 idle_textures = load_sheet(TEXTURES["idle"], 6)
 run_textures = load_sheet(TEXTURES["run"], 6)
 attack_textures = load_sheet(TEXTURES["attack"], 4)
 
-explosion_sound = arcade.load_sound("sources/sound+music/SFX/explosion.mp3")
+explosion_sound = arcade.load_sound("sound+music/SFX/explosion.mp3")
 
 class Exploser(Enemy):
     def __init__(self, x, y, player, **kwargs):
