@@ -1,10 +1,10 @@
 import arcade
 
-from sources.menu.button_sprite import ButtonSprite
-from sources.entity.pnj.pnj import Pnj
-from sources.inventory.inventory import get_item_class
+from menu.button_sprite import ButtonSprite
+from entity.pnj.pnj import Pnj
+from inventory.inventory import get_item_class
 
-path_to_trade_texture = "sources/textures/UI/trade.png"
+path_to_trade_texture = "textures/UI/trade.png"
 img_trade = arcade.load_texture(path_to_trade_texture)
 
 class MenuTrade(arcade.View):
