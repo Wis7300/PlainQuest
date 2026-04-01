@@ -1,10 +1,10 @@
 import arcade
 
-from sources.menu.button_sprite import ButtonSprite
+from menu.button_sprite import ButtonSprite
 
-click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
-MENU_IMAGE = "sources/textures/UI/menu_img.jpg"
-path_to_img_control = "sources/textures/UI/control.png"
+click_sound = arcade.load_sound("sound+music/SFX/menu_click.mp3")
+MENU_IMAGE = "textures/UI/menu_img.jpg"
+path_to_img_control = "textures/UI/control.png"
 img_control = arcade.load_texture(path_to_img_control)
 
 class MenuControl(arcade.View):
