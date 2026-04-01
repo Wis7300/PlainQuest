@@ -1,8 +1,8 @@
 import math
 
-from sources.entity.entity import Entity
+from entity.entity import Entity
 
-IMG_COIN = "sources/textures/item/coin/coin.png"
+IMG_COIN = "textures/item/coin/coin.png"
 
 
 class Item(Entity):
