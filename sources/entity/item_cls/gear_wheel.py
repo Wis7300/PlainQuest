@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_GEAR_WHEEL = "sources/textures/item/gear_wheel/gear_wheel.png"
+IMG_GEAR_WHEEL = "textures/item/gear_wheel/gear_wheel.png"
 
 class Gear_wheel(Item):
     type = "roue dentee"
