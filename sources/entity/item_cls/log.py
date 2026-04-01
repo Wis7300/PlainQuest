@@ -1,6 +1,6 @@
-from sources.entity import Item
+from entity import Item
 
-IMG_LOG = "sources/textures/item/log/log.png"
+IMG_LOG = "textures/item/log/log.png"
 
 class Log(Item):
     type = "buche"
