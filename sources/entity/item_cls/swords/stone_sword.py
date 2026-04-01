@@ -1,8 +1,8 @@
-from sources.entity.item_cls.sword import Sword
-from sources.entity.item import Item
-from sources.textures.load_sheet import load_sheet
+from entity.item_cls.sword import Sword
+from entity.item import Item
+from textures.load_sheet import load_sheet
 
-IMG_SWORD = "sources/textures/item/sword/stone sword.png"
+IMG_SWORD = "textures/item/sword/stone sword.png"
 
 sword_texture = load_sheet(IMG_SWORD, 6)
 
