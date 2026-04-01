@@ -1,13 +1,13 @@
 import arcade
 import os
 
-from sources.menu.button_sprite import ButtonSprite
-from sources.save.save import delete_file
-from sources.logic import GameView
+from menu.button_sprite import ButtonSprite
+from save.save import delete_file
+from logic import GameView
 
 
-click_sound = arcade.load_sound("sources/sound+music/SFX/menu_click.mp3")
-MENU_IMAGE = "sources/textures/UI/menu_img.jpg"
+click_sound = arcade.load_sound("sound+music/SFX/menu_click.mp3")
+MENU_IMAGE = "textures/UI/menu_img.jpg"
 
 
 class MenuSave(arcade.View):
