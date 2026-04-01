@@ -1,14 +1,14 @@
 import arcade
 import random
 
-from sources.entity.item_cls import *
-from sources.entity.item import Item
-from sources.menu.menu_end_screen.menu_end_screen import MenuEndScreen
+from entity.item_cls import *
+from entity.item import Item
+from menu.menu_end_screen.menu_end_screen import MenuEndScreen
 
 
 OBJECT_SIZE = 60
 
-texture_to_title = "sources/textures/UI/inventory.png"
+texture_to_title = "textures/UI/inventory.png"
 
 class Case(arcade.Sprite):
     def __init__(self, center_x, center_y, width, height, color):
